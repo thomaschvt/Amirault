@@ -1,11 +1,12 @@
-<?php
+﻿<?php
 include('header.php');
 $connexion = connexion_bd(SERVEUR, LOGIN, PASSWORD, BASE);
 
 if (isset($_POST['edition_ok'])) {
 
-    $req_pages = "UPDATE page SET titre = '" . $_POST['titre'] . "', contenu = '" . $_POST['contenu'] . "' WHERE id=" . $_POST['edition_id'];
+    $req_pages = 'UPDATE page SET titre = "' . $_POST['titre'] . '", contenu = "' . $_POST['contenu'] . '" WHERE id=' . $_POST['edition_id'];
     $res_req_pages = mysql_query($req_pages, $connexion);
+	
     header('Location: index.php');
 } else {
 

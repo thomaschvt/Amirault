@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 include 'header.php';
 $connexion = connexion_bd(SERVEUR, LOGIN, PASSWORD, BASE);
 

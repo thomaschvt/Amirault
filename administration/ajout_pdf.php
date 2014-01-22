@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 include 'header.php';
 $id_produit = $_GET['id_produit'];
 ?>
